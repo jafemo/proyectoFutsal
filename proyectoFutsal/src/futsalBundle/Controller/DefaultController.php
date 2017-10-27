@@ -8,17 +8,17 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 class DefaultController extends Controller
 {
   /**
-   * @Route("/proyecto", name="inicial")
+   * @Route("/inicio", name="inicial")
    */
-    public function indexAction()
+    public function inicioAction()
     {
-        return $this->render('futsalBundle:Default:index.html.twig');
+        return $this->render('futsalBundle:Default:inicio.html.twig');
     }
 
     /**
      * @Route("/horarios", name="horarios")
      */
-      public function indexAction()
+      public function horariosAction()
       {
           return $this->render('futsalBundle:Default:horarios.html.twig');
       }
@@ -26,7 +26,7 @@ class DefaultController extends Controller
       /**
        * @Route("/jornada", name="jornada")
        */
-        public function indexAction()
+        public function jornadaAction()
         {
             return $this->render('futsalBundle:Default:jornada.html.twig');
         }
@@ -34,7 +34,7 @@ class DefaultController extends Controller
         /**
          * @Route("/quienSomos", name="quienSomos")
          */
-          public function indexAction()
+          public function quienSomosAction()
           {
               return $this->render('futsalBundle:Default:quienSomos.html.twig');
           }
@@ -42,14 +42,14 @@ class DefaultController extends Controller
           /**
            * @Route("/equipos", name="equipos")
            */
-            public function indexAction()
+            public function equiposAction()
             {
                 return $this->render('futsalBundle:Default:equipos.html.twig');
             }
             /**
              * @Route("/fotos", name="fotos")
              */
-              public function indexAction()
+              public function fotosAction()
               {
                   return $this->render('futsalBundle:Default:fotos.html.twig');
               }
@@ -57,7 +57,7 @@ class DefaultController extends Controller
               /**
                * @Route("/foro", name="foro")
                */
-                public function indexAction()
+                public function foroAction()
                 {
                     return $this->render('futsalBundle:Default:foro.html.twig');
                 }
@@ -65,7 +65,7 @@ class DefaultController extends Controller
                 /**
                  * @Route("/inicioSesion", name="inicioSesion")
                  */
-                  public function indexAction()
+                  public function inicioSesionAction()
                   {
                       return $this->render('futsalBundle:Default:inicioSesion.html.twig');
                   }
@@ -73,7 +73,7 @@ class DefaultController extends Controller
                   /**
                    * @Route("/registro", name="registro")
                    */
-                    public function indexAction()
+                    public function registroAction()
                     {
                         return $this->render('futsalBundle:Default:registro.html.twig');
                     }
