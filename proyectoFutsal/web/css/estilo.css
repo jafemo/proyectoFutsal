@@ -1,9 +1,9 @@
 header{
-  background-color: blue;
+  background:
 }
 
 body{
-  background-color: white;
+  background-image: url('/img/fondo.png');
 }
 
 footer{
