@@ -1,0 +1,9 @@
+<ul>
+  {% for futsal in equipos %}
+  <h2>{{ futsal.nombre }}</h2>
+  <p>{{ futsal.apellidos }}</p>
+  <a href="{{ path('borrarEquipo', {'id': futsal.id}) }}">Borrar equipo</a>
+  <br>
+  <a href="{{ path('editarEquipo', {'id': futsal.id}) }}">Editar equipo</a>
+  {% endfor %}
+</ul>

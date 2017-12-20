@@ -1,10 +1,9 @@
 {% extends '::plantilla.html.twig' %}
 {% block body %}
-{% for equipo in TablaEquipos %}
 
-<h2>{{equipo.nombre}}</h2>
-<p>{{equipo.apellidos}}</p>
+<h2>{{ tablaJugadores.nombre }}</h2>
+<p>{{ tablaJugadores.apellidos }}</p>
 
-{% endfor %}
+
 
 {% endblock %}

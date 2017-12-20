@@ -18,7 +18,7 @@ class futsalType extends AbstractType
         ->add('nombre')
         ->add('apellidos')
         ->add('edad')
-        ->add('categoria');
+        ->add('categoria')
         ->add('Enviar', SubmitType::class);
     }
 
