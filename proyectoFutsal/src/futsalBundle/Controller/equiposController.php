@@ -8,8 +8,7 @@ use futsalBundle\Entity\futsal;
 use futsalBundle\Form\futsalType;
 use Symfony\Component\HttpFoundation\Request;
 
-class equiposController extends Controller
-{
+class equiposController extends Controller{
 
   /**
    * @Route("/equipos", name="equipos")
@@ -28,7 +27,7 @@ class equiposController extends Controller
        return $this->render('futsalBundle:carpeta_equipos:equipos.html.twig', array('tablaJugadores'=>$jugador));
      }
 
-     return $this->render('futsalBundle:Default:nuevoJugador.html.twig', array('form'=>$form->createView()));
+     return $this->render('futsalBundle:carpeta_equipos:nuevoJugador.html.twig', array('form'=>$form->createView()));
    }
 
    /**

@@ -1,3 +1,5 @@
+{% extends '::plantilla.html.twig' %}
+{% block body %}
 <ul>
   {% for futsal in equipos %}
   <h2>{{ futsal.nombre }}</h2>
@@ -7,3 +9,4 @@
   <a href="{{ path('editarEquipo', {'id': futsal.id}) }}">Editar equipo</a>
   {% endfor %}
 </ul>
+{% endblock %}

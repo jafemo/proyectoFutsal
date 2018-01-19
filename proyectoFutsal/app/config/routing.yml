@@ -1,8 +1,3 @@
-seguridad:
-    resource: "@seguridadBundle/Controller/"
-    type:     annotation
-    prefix:   /
-
 futsal:
     resource: '@futsalBundle/Controller/'
     prefix:   /proyecto

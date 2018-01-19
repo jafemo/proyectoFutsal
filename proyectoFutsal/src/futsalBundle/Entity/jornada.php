@@ -42,6 +42,20 @@ class jornada
      */
     private $rival;
 
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="dia", type="integer" )
+     */
+    private $dia;
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="hora", type="integer")
+     */
+    private $hora;
+
 
     /**
      * Get id
@@ -124,5 +138,52 @@ class jornada
     {
         return $this->rival;
     }
-}
 
+    /**
+     * Set dia
+     *
+     * @param int $dia
+     *
+     * @return jornada
+     */
+    public function setDia($dia)
+    {
+        $this->dia = $dia;
+
+        return $this;
+    }
+
+    /**
+     * Get dia
+     *
+     * @return int
+     */
+    public function getDia()
+    {
+        return $this->dia;
+    }
+
+    /**
+     * Set hora
+     *
+     * @param int $hora
+     *
+     * @return jornada
+     */
+    public function setHora($hora)
+    {
+        $this->rival = $hora;
+
+        return $this;
+    }
+
+    /**
+     * Get hora
+     *
+     * @return int
+     */
+    public function getHora()
+    {
+        return $this->hora;
+    }
+}

@@ -6,9 +6,25 @@
         {% block stylesheets %}{% endblock %}
         <link rel="stylesheet" href="{{ asset('css/estilo.css') }}">
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+
     </head>
     <body>
-        {% block body %}{% endblock %}
+      <div id="sidebar">
+            {% block sidebar %}
+            <ul>
+                <li><a href="/">Inicio</a></li>
+                <li><a href="carpeta_equipos/equipos.html.twig">Equipos</a></li>
+                <li><a href="/blog">Jornadas</a></li>
+                <li><a href="/blog">Horarios</a></li>
+                <li><a href="/blog">Inicia Sesion</a></li>
+                <li><a href="/blog">Registrate</a></li>
+            </ul>
+            {% endblock %}
+        </div>
+
+        <div id="contenido">
+            {% block body %}{% endblock %}
+        </div>
         {% block javascripts %}{% endblock %}
 
     </body>
